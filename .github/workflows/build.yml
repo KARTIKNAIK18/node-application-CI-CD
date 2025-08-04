@@ -28,3 +28,21 @@ jobs:
       run: |
         docker tag demo-nodeapp-v1:latest ${{ secrets.DOCKERUSERNAME }}/demo-nodeapp-v1:latest
         docker push ${{ secrets.DOCKERUSERNAME }}/demo-nodeapp-v1:latest
+
+
+  trivy-scan:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: pulling the image
+        run: docker pull kartiknaik/demo-nodeapp-v1:latest
+
+      - name: Scan docker image
+        uses: aquasecurity/trivy-action@0.30.0
+        with:
+          scan-type: 'image'
+          image-ref: 'kartiknaik/demo-nodeapp-v1:latest'
+          format: 'sarif'
+          severity: 'CRITICAL,HIGH'
+          exit-code: 0
