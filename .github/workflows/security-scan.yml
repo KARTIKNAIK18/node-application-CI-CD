@@ -17,7 +17,7 @@ jobs:
       run: echo "${{ secrets.DOCKERPASSWORD}}" | docker login -u "${{ secrets.DOCKERUSERNAME }}" --password-stdin
 
     - name: Build Docker image
-      run: docker build -t ${{ secrets.DOCKERUSERNAME }}/demo-nodeapp-v1:latest .
+      run: docker build -t demo-nodeapp-v1:latest .
     
     - name: List Docker images
       run: docker images
@@ -34,4 +34,6 @@ jobs:
 
     - name: Push Docker image
       if: success()
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/my-app:latest
+      run: |
+          docker tag demo-nodeapp-v1:latest ${{ secrets.DOCKERUSERNAME }}/demo-nodeapp-v1:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/my-app:latest
