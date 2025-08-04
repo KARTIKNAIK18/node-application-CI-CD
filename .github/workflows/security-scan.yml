@@ -23,7 +23,7 @@ jobs:
     - name: Scan Docker image with Trivy
       uses: aquasecurity/trivy-action@master
       with:
-        image-ref: '${{ secrets.DOCKER_USERNAME }}/my-app:latest'
+        image-ref: '${{ secrets.DOCKER_USERNAME }}/demo-nodeapp-v1:latest'
         format: 'table'
         exit-code: '0'
         ignore-unfixed: true
