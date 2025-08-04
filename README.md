@@ -120,7 +120,7 @@ Configure the following secrets in your repo:
 | File            | Description                                      |
 |------------------|--------------------------------------------------|
 | `docker.yml`     | Builds & pushes Docker image to Docker Hub       |
-| `scan.yml`       | Performs Trivy scan for vulnerabilities           |
+| `scan.yml`       | Performs Trivy scan for vulnerabilities          |
 | `test.yml`       | Runs container & validates app with `curl`       |
 
 ---
@@ -175,6 +175,8 @@ $ curl http://localhost:3000
 Current Date & Time: 2025-08-04 20:08:00
 ```
 
+![App Output](screenshots/output.png)
+
 ---
 
 ## 📜 Logs & GitHub Actions Summary
@@ -187,10 +189,9 @@ Each workflow job produces useful logs for debugging and validation:
 | Trivy Scan    | Security summary, SARIF logs, exit codes  |
 | Test Job      | Container boot, `curl` response check     |
 
-🖼️ _Add log screenshots here for each stage_
+-   ![Build Logs](screenshots/log1.png)
+-   ![Scan Logs](screenshots/log2.png)
+-   ![deploy Logs](screenshots/log3.png)
 
-- ![Build Logs](screenshots/logs-build.png)
-- ![Scan Logs](screenshots/logs-scan.png)
-- ![Test Logs](screenshots/logs-test.png)
 
 ---
