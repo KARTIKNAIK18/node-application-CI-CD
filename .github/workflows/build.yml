@@ -60,8 +60,7 @@ jobs:
       
       - name: Run the image
         run: docker run -d -p 3000:3000 kartiknaik/demo-nodeapp-v1:latest
-      - name: cheack the application logs
-        run: docker logs kartiknaik/demo-nodeapp-v1:latest
+
       - name: Check if the app is running
         run: |
           sleep 10
