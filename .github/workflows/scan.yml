@@ -11,7 +11,7 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
 
-    scan:
+    steps:
       - name: pulling the image
         run: docker pull kartiknaik/demo-nodeapp-v1:latest
 
