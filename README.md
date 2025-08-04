@@ -1,7 +1,3 @@
-
----
-
-````markdown
 ---
 
 <img src="https://img.icons8.com/fluency/48/time.png" width="25"/> **Date & Time Web App**
@@ -204,4 +200,5 @@ Each workflow job produces useful logs for debugging and validation:
 ```
 
 ---
+
 
