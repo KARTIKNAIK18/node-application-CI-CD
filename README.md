@@ -86,6 +86,10 @@ needs: scan
 ```
 
 ### 🖼️ CI/CD Workflow Visuals
+
+![Description of image](screenshots/cicd.png)
+
+
 ## 🚀 Local Development (Without Docker)
 
 **Pre-requisite**: Node.js installed locally
@@ -206,3 +210,37 @@ CI workflow performs:
 
 ----------
 
+
+📤 Output & Results
+Once the CI/CD pipeline completes successfully, your app is:
+
+✅ Built and pushed to Docker Hub
+
+🔍 Scanned for vulnerabilities using Trivy
+
+🚀 Deployed and tested via curl to ensure it's live
+
+🖼️ Output Visuals (Add your screenshots here)
+
+![Output](screenshots/image.png)
+
+
+Sample curl Response
+bash
+$ curl http://localhost:3000
+Current Date & Time: 2025-08-04 20:08:00
+
+🧾 Sample Logs
+
+![Output](screenshots/output.png)
+
+📊 GitHub Actions Summary
+Each job in the workflow provides a detailed summary:
+
+🛠️ Build & Push: Confirms image creation and upload
+
+🛡️ Trivy Scan: Lists vulnerabilities (if any)
+
+🔁 Test: Shows container status and HTTP response
+
+You can view these summaries directly in the Actions tab of your GitHub repository.
