@@ -171,7 +171,7 @@ $ curl http://localhost:3000
 Current Date & Time: 2025-08-04 20:08:00
 ```
 
-![App Output](screenshots/output.png)
+![App Output](screenshots/image.png)
 
 ---
 
@@ -188,5 +188,6 @@ Each workflow job produces useful logs for debugging and validation:
 -   ![Build Logs](screenshots/log1.png)
 -   ![Scan Logs](screenshots/log2.png)
 -   ![deploy Logs](screenshots/log3.png)
+
 
 
