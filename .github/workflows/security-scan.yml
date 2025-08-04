@@ -1,0 +1,19 @@
+name: Github actions
+run-name: ${{ Github.actor}}
+on: [push,pull_request]
+
+jobs:
+    Cheackout:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Cheackout code
+            uses: actions/checkout@v2
+
+    code-scan:
+        runs-on: ubuntu-latest
+        steps:
+          - name: insatalling the  dependecy
+            run: npm install
+          - name: Running the security scan
+            run: npm audit --audit-level=moderate
+           
