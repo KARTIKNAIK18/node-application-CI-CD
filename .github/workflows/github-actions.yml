@@ -7,4 +7,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Hello World
-            run: echo "Hello World"
+            run: echo "running github actions"
+        steps:
+          - name: Cheackout code
+            uses: actions/checkout@v2
