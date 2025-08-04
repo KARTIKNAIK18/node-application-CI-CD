@@ -30,7 +30,8 @@ jobs:
         docker push ${{ secrets.DOCKERUSERNAME }}/demo-nodeapp-v1:latest
 
 
-  trivy-scan:
+trivy-scan:
+    name: Trivy Scan
     runs-on: ubuntu-latest
 
     steps:
