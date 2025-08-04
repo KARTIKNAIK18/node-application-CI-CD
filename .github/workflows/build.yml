@@ -61,8 +61,8 @@ jobs:
       - name: Run the image
         run: docker run -d -p 3000:3000 kartiknaik/demo-nodeapp-v1:latest
       - name: Check if the app is running
-        run: curl -f http://localhost:3000 | echo "app not running"
+        run: curl -f http://localhost:3000
       - name: app is running
         run: echo "app is running"
-      - name: Stop the container
-        run: docker ps -q | xargs docker stop || echo "No containers to stop"
+      - name: cheack the application logs
+        run: docker logs kartiknaik/demo-nodeapp-v1:latest
