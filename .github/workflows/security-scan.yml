@@ -17,7 +17,7 @@ jobs:
       run: echo "${{ secrets.DOCKERPASSWORD}}" | docker login -u "${{ secrets.DOCKERUSERNAME }}" --password-stdin
 
     - name: Build Docker image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/demo-nodeapp-v1:latest .
+      run: docker build -t ${{ secrets.DOCKERUSERNAME }}/demo-nodeapp-v1:latest .
 
 
     - name: Scan Docker image with Trivy
