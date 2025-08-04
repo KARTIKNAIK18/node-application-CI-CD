@@ -7,6 +7,7 @@ on:
 
 jobs:
   Build:
+     name: Build & Push
     runs-on: ubuntu-latest
 
     steps:
@@ -30,7 +31,7 @@ jobs:
         docker push ${{ secrets.DOCKERUSERNAME }}/demo-nodeapp-v1:latest
 
 
-  trivy-scan:
+  scan:
     name: Trivy Scan
     runs-on: ubuntu-latest
 
