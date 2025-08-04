@@ -34,6 +34,7 @@ jobs:
   scan:
     name: Trivy Scan
     runs-on: ubuntu-latest
+    needs: build
 
     steps:
       - name: pulling the image
