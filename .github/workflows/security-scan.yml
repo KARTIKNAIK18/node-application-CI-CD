@@ -18,6 +18,8 @@ jobs:
 
     - name: Build Docker image
       run: docker build -t ${{ secrets.DOCKERUSERNAME }}/demo-nodeapp-v1:latest .
+    
+    - name: List Docker images
       run: docker images
 
 
