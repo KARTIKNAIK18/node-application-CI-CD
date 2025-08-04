@@ -8,21 +8,12 @@ jobs:
         steps:
           - name: Cheackout code
             uses: actions/checkout@v2
-    
-    updating-system:
-        runs-on: ubuntu-latest
-        steps:
-          - name: uppdateing the system
-            run: sudo apt update && sudo apt upgrade -y
-          - name: installing nodejs
-            run: sudo apt install nodejs npm -y
-          - name: cheacking the installation
-            run: node -v && npm -v
-            run: echo "Node.js and npm are installed successfully"
 
     code-scan:
         runs-on: ubuntu-latest
         steps:
+          - name: Cheackout code
+            uses: actions/checkout@v2
           - name: insatalling the  dependecy
             run: npm install
           - name: Running the security scan
