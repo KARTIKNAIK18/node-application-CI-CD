@@ -26,5 +26,5 @@ jobs:
     - name: Push Docker image
       if: success()
       run: |
-          docker tag demo-nodeapp-v1:latest ${{ secrets.DOCKERUSERNAME }}/demo-nodeapp-v1:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/my-app:latest
+        docker tag demo-nodeapp-v1:latest ${{ secrets.DOCKERUSERNAME }}/demo-nodeapp-v1:latest
+        docker push ${{ secrets.DOCKERUSERNAME }}/my-app:latest
