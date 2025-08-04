@@ -8,6 +8,9 @@ jobs:
         steps:
           - name: Hello World
             run: echo "running github actions"
+jobs:
+    Cheackout:
+        runs-on: ubuntu-latest
         steps:
           - name: Cheackout code
             uses: actions/checkout@v2
