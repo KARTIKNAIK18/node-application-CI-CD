@@ -1,8 +1,6 @@
-Here's your improved and cleaner README with professional formatting and focused content, especially around containerization and CI/CD. I’ve corrected structure issues, removed repeated or placeholder labels like “yaml,” and organized your logs, outputs, and summaries more elegantly.
-
 ---
 
-# 🕒 Node.js Date & Time Web App
+<img src="https://img.icons8.com/fluency/48/time.png" width="25"/> **Date & Time Web App**
 
 *A minimal Node.js Express application that displays the current date and time. Built for containerized deployment with automated CI/CD using Docker and GitHub Actions.*
 
@@ -10,21 +8,29 @@ Here's your improved and cleaner README with professional formatting and focused
 
 ## 🌟 Key Highlights
 
-- 📅 Real-time date & time display  
-- 🖼️ Static frontend via `public/index.html`  
-- 🐳 Fully containerized using Docker  
-- 🔄 Automated CI/CD with GitHub Actions:
-  - Build & push Docker image  
-  - Scan using Trivy for vulnerabilities  
-  - Test deployment via `curl`  
+<p align="left">
+  <img src="https://img.icons8.com/fluency/30/planner.png" width="24"/> <b>Real-time date & time display</b>  
+  <br/>
+  <img src="https://img.icons8.com/fluency/30/web.png" width="24"/> <b>Static frontend via</b> <code>public/index.html</code>  
+  <br/>
+  <img src="https://img.icons8.com/fluency/30/docker.png" width="24"/> <b>Fully containerized using Docker</b>  
+  <br/>
+  <img src="https://img.icons8.com/fluency/30/automatic.png" width="24"/> <b>Automated CI/CD with GitHub Actions</b>:
+  <ul>
+    <li>🔨 Build & push Docker image</li>
+    <li>🛡️ Scan with Trivy for vulnerabilities</li>
+    <li>📡 Test deployment via <code>curl</code></li>
+  </ul>
+</p>
+
 
 ---
 
-## ⚙️ CI/CD Pipeline Overview
+<img src="https://img.icons8.com/color/48/github.png" width="25"/> **CI/CD Pipeline Overview**
 
 This project uses **GitHub Actions** to automate the container lifecycle:
 
-### 🔄 Workflow Breakdown
+<img src="https://img.icons8.com/?size=100&id=122699&format=png&color=000000" width="28"/> ** Workflow Breakdown **
 
 #### 🛠️ 1. Build & Push (`docker.yml`)
 Triggered on every push to the `main` branch:
@@ -66,7 +72,7 @@ needs: scan
 
 ---
 
-## 🖼️ CI/CD Workflow Visuals
+<img src="https://img.icons8.com/?size=100&id=WMvhDPZBJ9X2&format=png&color=000000" width="26"/> **CI/CD Workflow Visuals**
 
 > _Insert your workflow screenshots here for visual reference_
 
@@ -74,7 +80,7 @@ needs: scan
 
 ---
 
-## 🚀 Local Development
+ <img src="https://img.icons8.com/?size=100&id=19293&format=png&color=000000" width="26"/> **Local Development**
 
 **Pre-requisite**: Node.js installed
 
@@ -90,7 +96,7 @@ node app.js
 
 ---
 
-## 🐳 Docker Usage
+<img src="https://img.icons8.com/fluency/48/docker.png" width="25"/> **Docker Usage**
 
 ```bash
 # Build Docker image
@@ -102,7 +108,7 @@ docker run -p 3000:3000 demo-nodeapp-v1
 
 ---
 
-## 🔐 GitHub Secrets Setup
+<img src="https://img.icons8.com/fluency/30/security-shield-green.png" width="24"/> **GitHub Secrets Setup**
 
 Configure the following secrets in your repo:
 
@@ -115,7 +121,7 @@ Configure the following secrets in your repo:
 
 ---
 
-## 🗂️ Workflow File Summary
+<img src="https://img.icons8.com/?size=100&id=VaM8ApUEJzn8&format=png&color=000000" width="26"/> **Workflow File Summary**
 
 | File            | Description                                      |
 |------------------|--------------------------------------------------|
@@ -166,7 +172,7 @@ Once the CI/CD pipeline runs:
 
 - ✅ Image is built and pushed  
 - 🔍 Trivy scan confirms vulnerability status  
-- 🚀 App is deployed and tested successfully  
+- <img src="https://img.icons8.com/fluency/48/monitor.png" width="25"/>  App is deployed and tested successfully  
 
 ### 💻 Sample `curl` Response
 
@@ -195,3 +201,4 @@ Each workflow job produces useful logs for debugging and validation:
 
 
 ---
+
