@@ -1,0 +1,10 @@
+name: Github actions
+run-name: ${{ Github.actor}}
+on: [push,pull_request]
+
+jobs:
+    Github-actions:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Hello World
+            run : echo "Hello World"
