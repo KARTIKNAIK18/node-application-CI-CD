@@ -1,7 +1,3 @@
-Here's your improved and cleaner README with professional formatting and focused content, especially around containerization and CI/CD. I’ve corrected structure issues, removed repeated or placeholder labels like “yaml,” and organized your logs, outputs, and summaries more elegantly.
-
----
-
 # 🕒 Node.js Date & Time Web App
 
 *A minimal Node.js Express application that displays the current date and time. Built for containerized deployment with automated CI/CD using Docker and GitHub Actions.*
@@ -175,7 +171,7 @@ $ curl http://localhost:3000
 Current Date & Time: 2025-08-04 20:08:00
 ```
 
-![App Output](screenshots/output.png)
+![App Output](screenshots/image.png)
 
 ---
 
@@ -194,4 +190,4 @@ Each workflow job produces useful logs for debugging and validation:
 -   ![deploy Logs](screenshots/log3.png)
 
 
----
+
